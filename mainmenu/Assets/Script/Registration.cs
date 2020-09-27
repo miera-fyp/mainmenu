@@ -24,9 +24,11 @@ public class Registration : MonoBehaviour
         //creating empty form 
         form.AddField("name", nameField.text);
         form.AddField("password", passwordField.text);
+     
 
         WWW www = new WWW("http://localhost/sqlconnect/register.php" , form);
         yield return www;
+        
         //www to retrieve content of the url
 
         if (www.text == "0")
