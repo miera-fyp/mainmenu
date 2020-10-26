@@ -35,7 +35,7 @@ public class Registration : MonoBehaviour
         {
             // 0 means no error, the account has been created 
             Debug.Log("User creation success");
-            UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+            UnityEngine.SceneManagement.SceneManager.LoadScene(3);
             //back to main menu
         }
         else
@@ -47,6 +47,11 @@ public class Registration : MonoBehaviour
     public void VerifyInput()
     {
         submitButton.interactable = (nameField.text.Length >= 4 && passwordField.text.Length >= 4);
+    }
+
+    public void CallBack()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene(1);
     }
 
 }

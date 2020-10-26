@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -35,7 +36,7 @@ public class Login : MonoBehaviour
             DBManager.username = nameField.text;
             //to ensure that it pass the 2nd information which is score 
             DBManager.score = int.Parse(www.text.Split('\t')[1]);
-            UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+            UnityEngine.SceneManagement.SceneManager.LoadScene(4);
             
         }
         else
@@ -47,5 +48,10 @@ public class Login : MonoBehaviour
     public void VerifyInput()
     {
         submitButton.interactable = (nameField.text.Length >= 4 && passwordField.text.Length >= 4);
+    }
+
+    public void CallBack()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene(1);
     }
 }

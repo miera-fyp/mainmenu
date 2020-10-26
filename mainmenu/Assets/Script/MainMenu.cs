@@ -27,21 +27,21 @@ public class MainMenu : MonoBehaviour
 
     public void GoToRegister()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
         //load scene registermenu
                           
     }
 
     public void GoToLogin()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(3);
         //load scene loginmenu
 
     }
 
     public void GoToGame()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(4);
         //load scene loginmenu
 
     }

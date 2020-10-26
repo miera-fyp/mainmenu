@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/00 game.unity
+    guid: 2e18002733fd3694e88e5990df4f1f65
+  - enabled: 1
     path: Assets/Scenes/01 mainmenu.unity
     guid: f73e089bb68b835409b3b6560c42617c
   - enabled: 1
@@ -15,6 +18,17 @@ EditorBuildSettings:
     path: Assets/Scenes/03 loginmenu.unity
     guid: 25ed98a532c56f348a03ad239df046d9
   - enabled: 1
-    path: Assets/Scenes/04 game.unity
-    guid: 2e18002733fd3694e88e5990df4f1f65
-  m_configObjects: {}
+    path: Assets/Scenes/04 game menu.unity
+    guid: 7bbe90b10ac878e40974a0f37071fdce
+  - enabled: 1
+    path: Assets/Scenes/05 assessmentphase.unity
+    guid: 275acc79a28981d438a95cce7abbf78c
+  - enabled: 1
+    path: Assets/Scenes/06 award exhibition.unity
+    guid: 6caa147dbb3940442a653d4f8531ad5b
+  - enabled: 1
+    path: Assets/Scenes/08 bowling.unity
+    guid: 909a48db540ed6e4e8680c6f8a8891a8
+  m_configObjects:
+    Unity.XR.OpenVR.Settings: {fileID: 11400000, guid: 8365efcea0da0da4aa56e180b9e6fa30,
+      type: 2}
